@@ -1,0 +1,19 @@
+{
+  "name": "muxi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Madbius UX/UI Intelligence documentation monorepo.",
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev --",
+    "build": "npm --workspace apps/web run build",
+    "preview": "npm --workspace apps/web run preview --",
+    "import-docs": "node scripts/import-docs.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
